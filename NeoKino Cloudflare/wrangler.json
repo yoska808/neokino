@@ -1,0 +1,29 @@
+{
+  "name": "neokino",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "no_bundle": true,
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.js",
+        "**/*.mjs"
+      ]
+    }
+  ],
+  "assets": {
+    "directory": "./dist/client"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "neokino",
+      "database_id": "506af0c2-663d-4ad6-802c-1e55d3717d5e",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}
